@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _isupper - If is uppercase return 1, if not return 0
@@ -7,11 +7,12 @@ include "main.h"
  *
  * Return: 0
  *
-**/
+ **/
 int _isupper(int c)
 {
-	if (c >= 65 && c <= 90)
+	if (c >= 'A' && c <= 'Z')
+	{
 		return (1);
-	else
-		return (0);
+	}
+	return (0);
 }
