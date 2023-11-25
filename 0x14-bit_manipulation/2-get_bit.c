@@ -1,6 +1,7 @@
 #include "main.h"
 
 /**
+<<<<<<< HEAD
  * get_bit - returns the value of a bit at a given index
  * @n: the number to get the bit from
  * @index: the index of the bit to get
@@ -11,5 +12,19 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	if (index > sizeof(n) * 8)
 		return (-1);
+=======
+ * *get_bit - get the value of a bit at the given index
+ * *@n: the number
+ * *@index: index starting from 0 of the bit required
+ * *
+ * *Return: The converted value
+ * */
+
+int get_bit(unsigned long int n, unsigned int index)
+{
+	if (index > 63)
+		return (-1);
+
+>>>>>>> dfef4200c477323ec098bbe5d6f0b0fd34e82182
 	return ((n >> index) & 1);
 }
